@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Architecture Firm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation and Hero Section -->
+    <header>
+        <nav>
+            <h1>Firm Name</h1>
+            <ul>
+                <li><a href="#work">Selected Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h2>Designing Spaces that Inspire.</h2>
+            <a href="#contact" class="cta-button">Discuss a Project</a>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="work">
+        <h2>Selected Works</h2>
+        <div class="portfolio-grid">
+            <!-- Replace 'project1.jpg' with your actual render files -->
+            <div class="project">
+                <img src="project1.jpg" alt="University Guest House Render">
+                <h3>Tropical Guest House</h3>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Smart Classroom Layout">
+                <h3>International School Classrooms</h3>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="Hostel Building Block">
+                <h3>Arc-Shaped Hostel Block</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <h2>Start Your Design</h2>
+        <form action="https://formspree.io/f/your_form_id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="project_details" placeholder="Tell me about your site and project requirements..." required></textarea>
+            <button type="submit" class="cta-button">Send Inquiry</button>
+        </form>
+    </section>
+
+</body>
+</html>

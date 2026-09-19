@@ -1,0 +1,93 @@
+/* Basic Setup */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header & Hero */
+header {
+    background-color: #fff;
+    padding: 20px 50px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.hero {
+    padding: 80px 20px;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+.cta-button:hover {
+    background-color: #555;
+}
+
+/* Portfolio Grid */
+#work {
+    padding: 50px;
+    text-align: center;
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+.project img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Keeps your renders looking sharp without stretching */
+    border-radius: 4px;
+}
+
+/* Contact Form */
+#contact {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input, textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
